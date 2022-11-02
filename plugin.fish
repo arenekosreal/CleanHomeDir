@@ -27,6 +27,7 @@ function _invoke_plugins
         set _current_plugin $_plugin
         _log debug "Invoking $_current_plugin"
         $_plugin
+        set _current_plugin
     end
 end
 
