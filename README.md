@@ -5,9 +5,13 @@ A tool to clean your $HOME dir, written in fish
 ## Requirements
 
 - fish
-- coreutils
-- findutils
 - all extra required by your plugins
+
+## Optional Depends
+
+- paru: for cleaning paru cache
+- poetry: for cleaning poetry cache
+- flatpak: for cleaning flatpak cache
 
 ## Useage
 

@@ -2,7 +2,8 @@
 
 function clean_paru
     log_info "Cleaning paru clone cache..."
-    for package in (find .cache/paru/clone/ -maxdepth 1 -mindepth 1 -type d | cut -d / -f 4)
+    for dir in .cache/paru/clone/*
+        set package (string split / -f 4 $dir)
         if paru -Qi $package &> /dev/null
             log_debug "$package is installed and should not be removed."
         else
