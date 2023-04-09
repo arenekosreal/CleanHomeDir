@@ -9,8 +9,11 @@ function clean-home-dir
     source (status dirname)/log.fish
     source (status dirname)/public-api.fish
     source (status dirname)/plugin.fish
- 
+
     _load_plugins
+    if test -d $XDG_DATA_HOME/clean-home-dir/plugins
+        _load_plugins $XDG_DATA_HOME/clean-home-dir
+    end
     _invoke_plugins
     _clean
 end

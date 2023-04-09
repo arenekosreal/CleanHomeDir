@@ -1,0 +1,10 @@
+[Unit]
+Description=Clean Home Directory
+
+[Service]
+Type=oneshot
+ExecStart=fish /path/to/clean-home-dir.fish
+
+
+[Install]
+WantedBy=multi-user.target

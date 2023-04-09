@@ -1,0 +1,9 @@
+[Unit]
+Description=Clean Home Directory Daily
+
+[Timer]
+OnCalendar=daily
+
+[Install]
+WantedBy=timers.target
+WantedBy=multi-user.target

@@ -2,7 +2,7 @@
 
 function clean_flatpak
     log_info "Cleaning flatpak user cache..."
-    flatpak --user remove --unused
+    flatpak --user remove --unused --assumeyes
     flatpak --user repair
 end
 

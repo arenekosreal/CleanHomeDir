@@ -24,6 +24,7 @@ function _log
             case error
                 echo 3
             case '*'
+                echo 1
                 return 1
         end
     end
